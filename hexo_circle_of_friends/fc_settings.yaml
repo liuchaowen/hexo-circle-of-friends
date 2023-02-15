@@ -29,18 +29,26 @@ LINK: [
 #       link：必填，友链主页地址
 #       avatar：必填，头像地址
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
+
+# 示例1：
+# ["贰猹の小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
+# ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
+# 示例2：使用suffix的配置如下
+# 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
+# 如果目标地址的后缀不在其中，就可以在这里添加
+# 比如 https://elizen.me/hello.xml ，填写：
+# ["elizen", "https://elizen.me/", "https://akilar.top/images/headimage.png", "hello.xml"]
 SETTINGS_FRIENDS_LINKS: {
     enable: false,
     json_api: "",
     list: [
-        # 示例1：
-        ["贰猹の小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
-        ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
-        # 示例2：使用suffix的配置如下
-        # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
-        # 如果目标地址的后缀不在其中，就可以在这里添加
-        # 比如 https://elizen.me/hello.xml ，填写：
-        ["elizen", "https://elizen.me/", "https://akilar.top/images/headimage.png", "hello.xml"]
+        ["陈阿叔", "https://www.rickychen.top", "https://i.imgtg.com/2023/02/15/dk7ol.jpg"],
+        ["猫叔", "https://maoshu.me", "https://i.imgtg.com/2023/02/15/dknVb.jpg"],
+        ["追忆白", "http://www.zhuiyibai.cn", "https://i.imgtg.com/2023/02/15/dkigP.jpg"],
+        ["Celia", "https://blog.becomingcelia.com", "https://i.imgtg.com/2023/02/15/dkNrg.jpg"],
+        ["摩尔の镇", "https://www.mole9630.top", "https://i.imgtg.com/2023/02/15/dkhW6.jpg"],
+        ["迷你日志", "https://minirizhi.com", "https://i.imgtg.com/2023/02/15/dkeQB.jpg"],
+        ["旧时繁华", "https://blog.rain888.cn", "https://i.imgtg.com/2023/02/15/dkr3s.jpg"],
     ]
 }
 
